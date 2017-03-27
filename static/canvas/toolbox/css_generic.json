@@ -1,0 +1,454 @@
+{
+  "css":
+  [
+    {
+      "properties": [
+        {
+          "description": "Sets border width, style and color.", 
+          "element-type": "All", 
+          "example": "{border: medium solid green}", 
+          "inherited": "No", 
+          "name": "border", 
+          "values": "See border width, style, and color"
+        }, 
+        {
+          "description": "Set the bottom border width style, and color.", 
+          "element-type": "All", 
+          "example": "{border-bottom: medium solid green}", 
+          "inherited": "No", 
+          "name": "border-bottom", 
+          "values": "See border width, style, and color"
+        }, 
+        {
+          "description": "Set the bottom border width", 
+          "element-type": "All", 
+          "example": "{border-bottom-width: thin}", 
+          "inherited": "No", 
+          "name": "border-bottom-width", 
+          "values": "thin, medium, thick, or length value"
+        }, 
+        {
+          "description": "Set the border color", 
+          "element-type": "All", 
+          "example": "{border: #0000ff}", 
+          "inherited": "No", 
+          "name": "border-color", 
+          "values": "A color value, color, #RRGGBB"
+        }, 
+        {
+          "description": "Set the left border width style, and color.", 
+          "element-type": "All", 
+          "example": "{border-left: medium solid green}", 
+          "inherited": "No", 
+          "name": "border-left", 
+          "values": "See border width, style, and color"
+        }, 
+        {
+          "description": "Set the left border width", 
+          "element-type": "All", 
+          "example": "{border-left-width: thin}", 
+          "inherited": "No", 
+          "name": "border-left-width", 
+          "values": "thin, medium, thick, or length value"
+        }, 
+        {
+          "description": "Set the right border width style, and color.", 
+          "element-type": "All", 
+          "example": "{border-right: medium solid green}", 
+          "inherited": "No", 
+          "name": "border-right", 
+          "values": "See border width, style, and color"
+        }, 
+        {
+          "description": "Set the right border width", 
+          "element-type": "All", 
+          "example": "{border-right-width: thin}", 
+          "inherited": "No", 
+          "name": "border-right-width", 
+          "values": "thin, medium, thick, or length value"
+        }, 
+        {
+          "description": "Sets border style", 
+          "element-type": "All", 
+          "example": "{border: dashed}", 
+          "inherited": "No", 
+          "name": "border-style", 
+          "values": "none, dotted, dashed, solid, double, groove, ridge, inset, outset"
+        }, 
+        {
+          "description": "Set the top border width style, and color.", 
+          "element-type": "All", 
+          "example": "{border-top: medium solid green}", 
+          "inherited": "No", 
+          "name": "border-top", 
+          "values": "See border width, style, and color"
+        }, 
+        {
+          "description": "Set the top border width", 
+          "element-type": "All", 
+          "example": "{border-top-width: thin}", 
+          "inherited": "No", 
+          "name": "border-top-width", 
+          "values": "thin, medium, thick, or length value"
+        }, 
+        {
+          "description": "Sets Border width.", 
+          "element-type": "All", 
+          "example": "{border-width: 8}", 
+          "inherited": "No", 
+          "name": "border-width", 
+          "values": "thin, medium, thick, or length value"
+        }, 
+        {
+          "description": "Determines where floating elements are allowed.", 
+          "element-type": "All", 
+          "example": "{clear: left}", 
+          "inherited": "No", 
+          "name": "clear", 
+          "values": "none, left, right, both"
+        }, 
+        {
+          "description": "Specifies how text is wrapped and where it is aligned.", 
+          "element-type": "All", 
+          "example": "{float: left}", 
+          "inherited": "No", 
+          "name": "float", 
+          "values": "none, left, right"
+        }, 
+        {
+          "description": "Height of element", 
+          "element-type": "Block elements and IMG, INPUT, TEXTAREA, SELECT, and OBJECT", 
+          "example": "{height: 200}", 
+          "inherited": "No", 
+          "name": "height", 
+          "values": "auto or a height value"
+        }, 
+        {
+          "description": "Set element margin width. A single value sets all margins, two values set top and bottom, four values set top, right, bottom, and left margins.", 
+          "element-type": "All", 
+          "example": "{margin: 4em 2em 4em 2em}", 
+          "inherited": "No", 
+          "name": "margin", 
+          "values": "auto, length value, or percent value"
+        }, 
+        {
+          "description": "Set element bottom margin", 
+          "element-type": "All", 
+          "example": "{margin-bottom: 4em}", 
+          "inherited": "No", 
+          "name": "margin-bottom", 
+          "values": "length value, or percent value"
+        }, 
+        {
+          "description": "Set element left margin", 
+          "element-type": "All", 
+          "example": "{margin-left: 4em}", 
+          "inherited": "No", 
+          "name": "margin-left", 
+          "values": "length value, or percent value"
+        }, 
+        {
+          "description": "Set element right margin", 
+          "element-type": "All", 
+          "example": "{margin-right: 4em}", 
+          "inherited": "No", 
+          "name": "margin-right", 
+          "values": "length value, or percent value"
+        }, 
+        {
+          "description": "Set element top margin", 
+          "element-type": "All", 
+          "example": "{margin-top: 4em}", 
+          "inherited": "No", 
+          "name": "margin-top", 
+          "values": "length value, or percent value"
+        }, 
+        {
+          "description": "Space between border and content.  A single value sets all sides, two values set top/bottom and left/right, three values set top, right/left, and bottom, and four values set top, right, bottom, and left.", 
+          "element-type": "All", 
+          "example": "{padding: 4em}", 
+          "inherited": "No", 
+          "name": "padding", 
+          "values": "length value, or percent value"
+        }, 
+        {
+          "description": "Space between bottom border and content.", 
+          "element-type": "All", 
+          "example": "{padding-bottom: 4em}", 
+          "inherited": "No", 
+          "name": "padding-bottom", 
+          "values": "length value, or percent value"
+        }, 
+        {
+          "description": "Space between left border and content.", 
+          "element-type": "All", 
+          "example": "{padding-left: 4em}", 
+          "inherited": "No", 
+          "name": "padding-left", 
+          "values": "length value, or percent value"
+        }, 
+        {
+          "description": "Space between right border and content.", 
+          "element-type": "All", 
+          "example": "{padding-right: 4em}", 
+          "inherited": "No", 
+          "name": "padding-right", 
+          "values": "length value, or percent value"
+        }, 
+        {
+          "description": "Space between top border and content.", 
+          "element-type": "All", 
+          "example": "{padding-top: 4em}", 
+          "inherited": "No", 
+          "name": "padding-top", 
+          "values": "length value, or percent value"
+        }, 
+        {
+          "description": "Width of element", 
+          "element-type": "Block elements and IMG, INPUT, TEXTAREA, SELECT, and OBJECT", 
+          "example": "{width: 40em}", 
+          "inherited": "No", 
+          "name": "width", 
+          "values": "auto or a height value in length or percentage"
+        }
+      ], 
+      "section": "Box Properties"
+    }, 
+    {
+      "properties": [
+        {
+          "description": "Set background color, repeat, image, attachment, or position.", 
+          "element-type": "All", 
+          "example": "{background: #8080ff}", 
+          "inherited": "No", 
+          "name": "background", 
+          "values": "See background-color, background-image, background-attachment, background-repeat, background-position"
+        }, 
+        {
+          "description": "Determines if the background image is fixed or scroll.", 
+          "element-type": "All", 
+          "example": "{background-attachment: scroll}", 
+          "inherited": "No", 
+          "name": "background-attachment", 
+          "values": "scroll, fixed"
+        }, 
+        {
+          "description": "Sets the background color.", 
+          "element-type": "All", 
+          "example": "{background-color: #8080ff}", 
+          "inherited": "No", 
+          "name": "background-color", 
+          "values": "Named or value color"
+        }, 
+        {
+          "description": "Sets the background image.", 
+          "element-type": "All", 
+          "example": "{background-image: url('../../../../gifs/flowers.gif')}", 
+          "inherited": "No", 
+          "name": "background-image", 
+          "values": "url"
+        }, 
+        {
+          "description": "Sets the background image initial position.", 
+          "element-type": "Block and IMG, INPUT, TEXTAREA, SELECT, and OBJECT", 
+          "example": "{background-position: left top}", 
+          "inherited": "No", 
+          "name": "background-position", 
+          "values": "top, center, bottom, left, center, right, or percent values"
+        }, 
+        {
+          "description": "Sets how the background image is repeated.", 
+          "element-type": "All", 
+          "example": "{background-repeat: no-repeat}", 
+          "inherited": "No", 
+          "name": "background-repeat", 
+          "values": "repeat, repeat-x, repeat-y, no-repeat"
+        }, 
+        {
+          "description": "Sets element color.", 
+          "element-type": "All", 
+          "example": "{color: green}", 
+          "inherited": "Yes", 
+          "name": "color", 
+          "values": "Named or value color"
+        }
+      ], 
+      "section": "Background and Color Properties"
+    }, 
+    {
+      "properties": [
+        {
+          "description": "Sets the type of element.", 
+          "element-type": "All", 
+          "example": "{display: list-item}", 
+          "inherited": "No", 
+          "name": "display", 
+          "values": "block, inline, list-item, none"
+        }, 
+        {
+          "description": "Sets list style type and/or position.", 
+          "element-type": "List-item", 
+          "example": "{list-style: circle}", 
+          "inherited": "Yes", 
+          "name": "list-style", 
+          "values": "See list-style-type and list-style-position"
+        }, 
+        {
+          "description": "Sets image to be used as the list item marker.", 
+          "element-type": "List-item", 
+          "example": "{list-style-image: url(this.gif)}", 
+          "inherited": "Yes", 
+          "name": "list-style-image", 
+          "values": "url"
+        }, 
+        {
+          "description": "Sets list style type.", 
+          "element-type": "List-item", 
+          "example": "{list-style-type: square}", 
+          "inherited": "Yes", 
+          "name": "list-style-type", 
+          "values": "circle, disc, decimal, lower-alpha, lower-roman, none, square, upper-alpha, upper-roman"
+        }, 
+        {
+          "description": "Sets where the marker is place relative to the text and its wrapping position.", 
+          "element-type": "List-item", 
+          "example": "{list-style: circle}", 
+          "inherited": "Yes", 
+          "name": "list-style-position", 
+          "values": "inside, outside"
+        }, 
+        {
+          "description": "Sets treatment of spaces inside the element.", 
+          "element-type": "Block", 
+          "example": "{whitespace: pre}", 
+          "inherited": "Yes", 
+          "name": "whitespace", 
+          "values": "normal, pre, nowrap"
+        }
+      ], 
+      "section": "Classification Properties"
+    }, 
+    {
+      "properties": [
+        {
+          "description": "Used to define font properties", 
+          "element-type": "All", 
+          "example": "{font: 20pt}", 
+          "inherited": "Yes", 
+          "name": "font", 
+          "values": "See font-family, font-size, font-style, font-variant, and font-weight."
+        }, 
+        {
+          "description": "Used to define font family to use", 
+          "element-type": "All", 
+          "example": "{font-family: ariel roman}", 
+          "inherited": "Yes", 
+          "name": "font-family", 
+          "values": "family name"
+        }, 
+        {
+          "description": "Used to define font size to use", 
+          "element-type": "All", 
+          "example": "{font-size: 18pt}", 
+          "inherited": "Yes", 
+          "name": "font-size", 
+          "values": "xx-small, x-small, small, medium, large, x-large, xx-large, larger, smaller, length value, or percent value"
+        }, 
+        {
+          "description": "Used to define font style to use", 
+          "element-type": "All", 
+          "example": "{font-style: italic}", 
+          "inherited": "Yes", 
+          "name": "font-style", 
+          "values": "normal, italic, oblique"
+        }, 
+        {
+          "description": "Used to determine whether to use normal or small caps", 
+          "element-type": "All", 
+          "example": "{font-variant: small-caps}", 
+          "inherited": "Yes", 
+          "name": "font-variant", 
+          "values": "normal, small-caps"
+        }, 
+        {
+          "description": "Sets font weight.", 
+          "element-type": "All", 
+          "example": "{font-weight: 600}", 
+          "inherited": "Yes", 
+          "name": "font-weight", 
+          "values": "normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900"
+        }
+      ], 
+      "section": "Font Properties"
+    }, 
+    {
+      "properties": [
+        {
+          "description": "Sets the space between characters.", 
+          "element-type": "All", 
+          "example": "{letter-spacing: 0.2em}", 
+          "inherited": "Yes", 
+          "name": "letter-spacing", 
+          "values": "normal or length value"
+        }, 
+        {
+          "description": "Sets the height of lines.", 
+          "element-type": "All", 
+          "example": "{line-height: 2}", 
+          "inherited": "Yes", 
+          "name": "line-height", 
+          "values": "normal, a number, a percent of the element font size,"
+        }, 
+        {
+          "description": "Sets the alignment of text.", 
+          "element-type": "Block", 
+          "example": "{text-align: center}", 
+          "inherited": "Yes", 
+          "name": "text-align", 
+          "values": "left, right, center, justify"
+        }, 
+        {
+          "description": "Sets the special decoration attributes of text.", 
+          "element-type": "All", 
+          "example": "{text-decoration: blink}", 
+          "inherited": "No", 
+          "name": "text-decoration", 
+          "values": "none, overline, underline, line-through, blink"
+        }, 
+        {
+          "description": "Sets the element's first line amount of indentation.", 
+          "element-type": "Block", 
+          "example": "{text-indent: 5%}", 
+          "inherited": "Yes", 
+          "name": "text-indent", 
+          "values": "length or percentage value"
+        }, 
+        {
+          "description": "Transforms text to one of the set values.", 
+          "element-type": "All", 
+          "example": "{text-transform: uppercase}", 
+          "inherited": "Yes", 
+          "name": "text-transform", 
+          "values": "none, capitalize, uppercase, lowercase"
+        }, 
+        {
+          "description": "Sets vertical position.", 
+          "element-type": "Inline", 
+          "example": "{vertical-align: sub}", 
+          "inherited": "No", 
+          "name": "vertical-align", 
+          "values": "baseline, sub. super, top, middle, bottom, text-top, text-bottom, or percent value"
+        }, 
+        {
+          "description": "Sets extra space between words.", 
+          "element-type": "All", 
+          "example": "{word-spacing: 0.2em}", 
+          "inherited": "Yes", 
+          "name": "word-spacing", 
+          "values": "normal or length value"
+        }
+      ], 
+      "section": "Text Properties"
+    }
+  ]
+}

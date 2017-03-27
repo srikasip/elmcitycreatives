@@ -1,0 +1,28 @@
+/* reset */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	background-color: #333333;
+	height: 100%;
+	overflow: hidden;
+}
+
+/* formato para las paginas */
+
+[role="page"] {
+	background-color: #FFFFFF;
+	height: 100%;
+	overflow: hidden;
+	visibility: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+.current-page {
+	visibility: visible;
+	z-index: 1;
+}

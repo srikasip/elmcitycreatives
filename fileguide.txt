@@ -1,0 +1,28 @@
+This purpose is to help me stay organized navigating the files and stuffs. 
+
+So here is the deal: 
+
+* Procfile houses the terminal gunicorn command to run our python server as soon as the content is loaded onto a server. 
+
+* requirements.txt, as you can guess, has the pre-reqs to be downloaded on a new server for the application to function correctly.  these are the dependencies. 
+
+* StaticHelper helps serve static content (think images, js files, json files, videos, this kind of thing)
+
+* Dynamic Helper serves the html content.  it specifically looks for a <template> tag and fills in the content from the file extension.
+
+* Files for the pages that a user sees are in the static folder
+
+* Canvas is the real core of the product.  Other folders that live on the same level of Canvas will be things like "User Management" or "About Us"
+
+* Within any folder in static, there is a folder for CSS files, JS files, and static assets.  
+
+* Any complicated subcontrollers (like the toolbox or soemthing) can have a subfolder inside the parent to keep all the content together. 
+
+* the toolbox prefix is for the toolbox that we ultimately want to roll out to.
+
+* toolbox_light prefix is for the v0 toolbox with a wildly lightweight setup. Rules here: 
+    1. Form Controls Available
+    2. Drag and Drop is possible
+    3. Everything is absolutely positioned (so nothing can be responsive in v0.  It will look great on just your machine)
+    4. No Parenting.  Body is the only parent.  And everything else is a child of body.  Body has no grand-children. (this one is tentative)
+

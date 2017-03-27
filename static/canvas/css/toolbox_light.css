@@ -1,0 +1,73 @@
+.toolbox-box
+{
+  width:100%;
+}
+.toolbox-item
+{
+  width:4em;
+  height:4em;
+  margin-left:1.5em;
+  margin-top:0.5em;
+  margin-bottom:0.5em;
+  float:left;
+  text-align:center;
+}
+.toolbox-item span
+{
+  font-size:0.6em;
+}
+.tooltip
+{
+  font-size: 0.6em;
+  z-index:99;
+  position:fixed;
+}
+.arbitraryObject
+{
+  min-height:2em;
+  min-width:2em;
+  border:none;
+}
+.arbitraryObject:hover
+{
+  border:solid 1px #333333;
+}
+.draggableWrapper
+{
+  display:inline-block;
+  position:relative;
+}
+.mover
+{
+  position:absolute;
+  top:-10px;
+  left:-10px;
+  height:20px;
+  width:20px;
+  cursor:move;
+}
+.over
+{
+  border: solid 2px #333333;
+}
+.contextmenu
+{
+  min-height:5em;
+  position:absolute;
+  background-color: white;
+  top:0;
+  left:0;
+  padding:16px;
+  font-size:0.7em;
+}
+.dropdown
+{
+  list-style-type: none;
+}
+.dropdown li
+{
+  cursor:pointer;
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}

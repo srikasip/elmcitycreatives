@@ -1,0 +1,1349 @@
+{
+  "genericAttributes": [
+    {
+      "attribute": "accesskey", 
+      "description": "Specifies a shortcut key to activate/focus an element"
+    }, 
+    {
+      "attribute": "class", 
+      "description": "Specifies one or more classnames for an element (refers to a class in a style sheet)"
+    }, 
+    {
+      "attribute": "contenteditable", 
+      "description": "Specifies whether the content \r\nof an element is editable or not"
+    }, 
+    {
+      "attribute": "contextmenu", 
+      "description": "Specifies a context menu for an element. The context menu appears when a \r\nuser right-clicks on the element "
+    }, 
+    {
+      "attribute": "data-*", 
+      "description": "Used to store custom data private to the page or application"
+    }, 
+    {
+      "attribute": "dir", 
+      "description": "Specifies the text direction for the content in an element"
+    }, 
+    {
+      "attribute": "draggable", 
+      "description": "Specifies whether an element is draggable or not"
+    }, 
+    {
+      "attribute": "dropzone", 
+      "description": "Specifies whether the dragged data is copied, moved, or linked, when dropped"
+    }, 
+    {
+      "attribute": "hidden", 
+      "description": "Specifies that an element is not yet, or is no longer, relevant"
+    }, 
+    {
+      "attribute": "id", 
+      "description": "Specifies a unique id for an element"
+    }, 
+    {
+      "attribute": "lang", 
+      "description": "Specifies the language of the element's content"
+    }, 
+    {
+      "attribute": "spellcheck", 
+      "description": "Specifies whether the element is to have its spelling and grammar checked or \r\nnot"
+    }, 
+    {
+      "attribute": "style", 
+      "description": "Specifies an inline CSS style for an element"
+    }, 
+    {
+      "attribute": "tabindex", 
+      "description": "Specifies the tabbing order of an element"
+    }, 
+    {
+      "attribute": "title", 
+      "description": "Specifies extra information about an element"
+    }, 
+    {
+      "attribute": "translate", 
+      "description": "Specifies whether the content of an element should be translated or not"
+    }
+  ],
+
+  "tags": [
+    {
+      "attributes": [
+        {
+          "attribute": "download", 
+          "description": "Specifies that the target will be downloaded when a user clicks on the hyperlink", 
+          "type": [
+            "filename"
+          ]
+        }, 
+        {
+          "attribute": "href", 
+          "description": "Specifies the URL of the page the link goes to", 
+          "type": [
+            "URL"
+          ]
+        }, 
+        {
+          "attribute": "hreflang", 
+          "description": "Specifies the language of the linked document", 
+          "type": [
+            "language_code"
+          ]
+        }, 
+        {
+          "attribute": "media", 
+          "description": "Specifies what media/device the linked document is optimized for", 
+          "type": [
+            "media_query"
+          ]
+        }, 
+        {
+          "attribute": "rel", 
+          "description": "Specifies the relationship between the current document and the linked document", 
+          "type": [
+            "alternate", 
+            "author", 
+            "bookmarkexternal", 
+            "help", 
+            "license", 
+            "next", 
+            "nofollow", 
+            "noreferrernoopener", 
+            "prev", 
+            "search", 
+            "tag"
+          ]
+        }, 
+        {
+          "attribute": "target", 
+          "description": "Specifies where to open the linked document", 
+          "type": [
+            "_blank", 
+            "_parent", 
+            "_self", 
+            "_top", 
+            "framename"
+          ]
+        },
+        {
+          "attribute": "type", 
+          "description": "Specifies the media type of the linked document", 
+          "type": [
+            "media_type"
+          ]
+        }
+      ], 
+      "description": "Defines a hyperlink", 
+      "tag": "a"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines contact information for the author/owner of a document", 
+      "tag": "address"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "alt", 
+          "description": "Specifies an alternate text for the area. Required if the href attribute is present", 
+          "type": [
+            "text"
+          ]
+        }, 
+        {
+          "attribute": "coords", 
+          "description": "Specifies the coordinates of the area", 
+          "type": [
+            "coordinates"
+          ]
+        }, 
+        {
+          "attribute": "download", 
+          "description": "Specifies that the target will be downloaded when a user clicks on the hyperlink", 
+          "type": [
+            "filename"
+          ]
+        }, 
+        {
+          "attribute": "href", 
+          "description": "Specifies the hyperlink target for the area", 
+          "type": [
+            "URL"
+          ]
+        },
+        {
+          "attribute": "hreflang", 
+          "description": "Specifies the language of the target URL", 
+          "type": [
+            "language_code"
+          ]
+        },
+        {
+          "attribute": "media", 
+          "description": "Specifies what media/device the target URL is optimized for", 
+          "type": [
+            "media query"
+          ]
+        },
+        {
+          "attribute": "rel", 
+          "description": "Specifies the relationship between the current document and the target URL", 
+          "type": [
+            "alternate", 
+            "author", 
+            "bookmark", 
+            "help", 
+            "license", 
+            "next", 
+            "nofollow", 
+            "noreferrer", 
+            "prefetch", 
+            "prev", 
+            "search", 
+            "tag"
+          ]
+        }, 
+        {
+          "attribute": "shape", 
+          "description": "Specifies the shape of the area", 
+          "type": [
+            "", 
+            "default", 
+            "rect", 
+            "circle", 
+            "poly"
+          ]
+        }, 
+        {
+          "attribute": "target", 
+          "description": "Specifies where to open the target URL", 
+          "type": [
+            "_blank", 
+            "_parent", 
+            "_self", 
+            "_top", 
+            "framename"
+          ]
+        }, 
+        {
+          "attribute": "type", 
+          "description": "Specifies the media type of the target URL", 
+          "type": [
+            "media_type"
+          ]
+        }
+      ], 
+      "description": "Defines an area inside an image-map", 
+      "tag": "area"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines an article", 
+      "tag": "article"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "autoplay", 
+          "description": "Specifies that the audio will start playing as soon as it is ready", 
+          "type": [
+            "autoplay"
+          ]
+        }, 
+        {
+          "attribute": "controls", 
+          "description": "Specifies that audio controls should be displayed (such as a play/pause button etc)", 
+          "type": [
+            "controls"
+          ]
+        }, 
+        {
+          "attribute": "loop", 
+          "description": "Specifies that the audio will start over again, every time it is finished", 
+          "type": [
+            "loop"
+          ]
+        }, 
+        {
+          "attribute": "muted", 
+          "description": "Specifies that the audio output should be muted", 
+          "type": [
+            "muted"
+          ]
+        }, 
+        {
+          "attribute": "preload", 
+          "description": "Specifies if and how the author thinks the audio should be loaded when the page loads", 
+          "type": [
+            "auto", 
+            "metadata", 
+            "none"
+          ]
+        }, 
+        {
+          "attribute": "src", 
+          "description": "Specifies the URL of the audio file", 
+          "type": [
+            "URL"
+          ]
+        }
+      ], 
+      "description": "Defines sound content", 
+      "tag": "audio"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines the document's body", 
+      "tag": "body"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "autofocus", 
+          "description": "Specifies that a button should automatically get focus when the page loads", 
+          "type": [
+            "autofocus"
+          ]
+        }, 
+        {
+          "attribute": "disabled", 
+          "description": "Specifies that a button should be disabled", 
+          "type": [
+            "disabled"
+          ]
+        }, 
+        {
+          "attribute": "form", 
+          "description": "Specifies one or more forms the button belongs to", 
+          "type": [
+            "form_id"
+          ]
+        }, 
+        {
+          "attribute": "formaction", 
+          "description": "Specifies where to send the form-data when a form is submitted. Only for type=\"submit\"", 
+          "type": [
+            "URL"
+          ]
+        }, 
+        {
+          "attribute": "formenctype", 
+          "description": "Specifies how form-data should be encoded before sending it to a server. Only for type=\"submit\"", 
+          "type": [
+            "application/x-www-form-urlencoded", 
+            "multipart/form-data", 
+            "text/plain"
+          ]
+        }, 
+        {
+          "attribute": "formmethod", 
+          "description": "Specifies how to send the form-data (which HTTP method to use). Only for type=\"submit\"", 
+          "type": [
+            "getpost"
+          ]
+        }, 
+        {
+          "attribute": "formnovalidate", 
+          "description": "Specifies that the form-data should not be validated on submission. Only for type=\"submit\" ", 
+          "type": [
+            "formnovalidate"
+          ]
+        }, 
+        {
+          "attribute": "formtarget", 
+          "description": "Specifies where to display the response after submitting the form. Only for type=\"submit\"", 
+          "type": [
+            "_blank", 
+            "_self", 
+            "_parent", 
+            "_top", 
+            "framename"
+          ]
+        }, 
+        {
+          "attribute": "name", 
+          "description": "Specifies a name for the button", 
+          "type": [
+            "name"
+          ]
+        }, 
+        {
+          "attribute": "type", 
+          "description": "Specifies the type of button", 
+          "type": [
+            "button", 
+            "reset", 
+            "submit"
+          ]
+        }, 
+        {
+          "attribute": "value", 
+          "description": "Specifies an initial value for the button", 
+          "type": [
+            "text"
+          ]
+        }
+      ], 
+      "description": "Defines a clickable button", 
+      "tag": "button"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines a table caption", 
+      "tag": "caption"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines a piece of computer code", 
+      "tag": "code"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "open", 
+          "description": "Specifies that the details should be visible (open) to the user", 
+          "type": [
+            "open"
+          ]
+        }
+      ], 
+      "description": "Defines additional details that the user can view or hide", 
+      "tag": "details"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "open", 
+          "description": "Specifies that the dialog element is active and that the user can interact with it", 
+          "type": [
+            "open"
+          ]
+        }
+      ], 
+      "description": "Defines a dialog box or window", 
+      "tag": "dialog"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines a section in a document", 
+      "tag": "div"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "disabled", 
+          "description": "Specifies that a group of related form elements should be disabled", 
+          "type": [
+            "disabled"
+          ]
+        }, 
+        {
+          "attribute": "form", 
+          "description": "Specifies one or more forms the fieldset belongs to", 
+          "type": [
+            "form_id"
+          ]
+        }, 
+        {
+          "attribute": "name", 
+          "description": "Specifies a name for the fieldset", 
+          "type": [
+            "text"
+          ]
+        }
+      ], 
+      "description": "Groups related elements in a form", 
+      "tag": "fieldset"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Specifies self-contained content", 
+      "tag": "figure"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines a footer for a document or section", 
+      "tag": "footer"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "accept-charset", 
+          "description": "Specifies the character encodings that are to be used for the form submission", 
+          "type": [
+            "character_set"
+          ]
+        }, 
+        {
+          "attribute": "action", 
+          "description": "Specifies where to send the form-data when a form is submitted", 
+          "type": [
+            "URL"
+          ]
+        }, 
+        {
+          "attribute": "autocomplete", 
+          "description": "Specifies whether a form should have autocomplete on or off", 
+          "type": [
+            "onoff"
+          ]
+        }, 
+        {
+          "attribute": "enctype", 
+          "description": "Specifies how the form-data should be encoded when submitting it to the server (only for method=\"post\")", 
+          "type": [
+            "application/x-www-form-urlencoded", 
+            "multipart/form-data", 
+            "text/plain"
+          ]
+        }, 
+        {
+          "attribute": "method", 
+          "description": "Specifies the HTTP method to use when sending form-data", 
+          "type": [
+            "get", 
+            "post"
+          ]
+        }, 
+        {
+          "attribute": "name", 
+          "description": "Specifies the name of a form", 
+          "type": [
+            "text"
+          ]
+        }, 
+        {
+          "attribute": "novalidate", 
+          "description": "Specifies that the form should not be validated when submitted", 
+          "type": [
+            "novalidate"
+          ]
+        }, 
+        {
+          "attribute": "target", 
+          "description": "Specifies where to display the response that is received after submitting the form", 
+          "type": [
+            "_blank", 
+            "_self", 
+            "_parent", 
+            "_top"
+          ]
+        }
+      ], 
+      "description": "Defines an HTML form for user input", 
+      "tag": "form"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines a header for a document or section", 
+      "tag": "header"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines a thematic change in the content", 
+      "tag": "hr"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "alt", 
+          "description": "Specifies an alternate text for an image", 
+          "type": [
+            "text"
+          ]
+        }, 
+        {
+          "attribute": "crossorigin", 
+          "description": "Allow images from third-party sites that allow cross-origin access to be used with canvas", 
+          "type": [
+            "anonymous", 
+            "use-credentials"
+          ]
+        }, 
+        {
+          "attribute": "height", 
+          "description": "Specifies the height of an image", 
+          "type": [
+            "pixels"
+          ]
+        }, 
+        {
+          "attribute": "ismap", 
+          "description": "Specifies an image as a server-side image-map", 
+          "type": [
+            "ismap"
+          ]
+        }, 
+        {
+          "attribute": "longdesc", 
+          "description": "Specifies a URL to a detailed description of an image", 
+          "type": [
+            "URL"
+          ]
+        }, 
+        {
+          "attribute": "sizes", 
+          "description": "Specifies image sizes for different page layouts", 
+          "type": [
+            ""
+          ]
+        }, 
+        {
+          "attribute": "src", 
+          "description": "Specifies the URL of an image", 
+          "type": [
+            "URL"
+          ]
+        }, 
+        {
+          "attribute": "srcset", 
+          "description": "Specifies the URL of the image to use in different situations", 
+          "type": [
+            "URL"
+          ]
+        }, 
+        {
+          "attribute": "usemap", 
+          "description": "Specifies an image as a client-side image-map", 
+          "type": [
+            "#mapname"
+          ]
+        }, 
+        {
+          "attribute": "width", 
+          "description": "Specifies the width of an image", 
+          "type": [
+            "pixels"
+          ]
+        }
+      ], 
+      "description": "Defines an image", 
+      "tag": "img"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "accept", 
+          "description": "Specifies the types of files that the server accepts (only for type=\"file\")", 
+          "type": [
+            "file_extension", 
+            "audio/*", 
+            "video/*", 
+            "image/*", 
+            "media_type"
+          ]
+        }, 
+        {
+          "attribute": "alt", 
+          "description": "Specifies an alternate text for images (only for type=\"image\")", 
+          "type": [
+            "text"
+          ]
+        }, 
+        {
+          "attribute": "autocomplete", 
+          "description": "Specifies whether an <input> element should have autocomplete enabled", 
+          "type": [
+            "on", 
+            "off"
+          ]
+        }, 
+        {
+          "attribute": "autofocus", 
+          "description": "Specifies that an <input> element should automatically get focus when the page loads", 
+          "type": [
+            "autofocus"
+          ]
+        }, 
+        {
+          "attribute": "checked", 
+          "description": "Specifies that an <input> element should be pre-selected when the page loads (for type=\"checkbox\" or type=\"radio\")", 
+          "type": [
+            "checked"
+          ]
+        }, 
+        {
+          "attribute": "dirname", 
+          "description": "Specifies that the text direction will be submitted", 
+          "type": [
+            "inputname.dir"
+          ]
+        }, 
+        {
+          "attribute": "disabled", 
+          "description": "Specifies that an <input> element should be disabled", 
+          "type": [
+            "disabled"
+          ]
+        }, 
+        {
+          "attribute": "form", 
+          "description": "Specifies one or more forms the <input> element belongs to", 
+          "type": [
+            "form_id"
+          ]
+        }, 
+        {
+          "attribute": "formaction", 
+          "description": "Specifies the URL of the file that will process the input control when the form is submitted (for type=\"submit\" and type=\"image\")", 
+          "type": [
+            "URL"
+          ]
+        }, 
+        {
+          "attribute": "formenctype", 
+          "description": "Specifies how the form-data should be encoded when submitting it to the server (for type=\"submit\" and type=\"image\")", 
+          "type": [
+            "application/x-www-form-urlencoded", 
+            "multipart/form-data", 
+            "text/plain"
+          ]
+        }, 
+        {
+          "attribute": "formmethod", 
+          "description": "Defines the HTTP method for sending data to the action URL (for type=\"submit\" and type=\"image\")", 
+          "type": [
+            "getpost"
+          ]
+        }, 
+        {
+          "attribute": "formnovalidate", 
+          "description": "Defines that form elements should not be validated when submitted", 
+          "type": [
+            "formnovalidate"
+          ]
+        }, 
+        {
+          "attribute": "formtarget", 
+          "description": "Specifies where to display the response that is received after submitting the form (for type=\"submit\" and type=\"image\")", 
+          "type": [
+            "_blank", 
+            "_self", 
+            "_parent", 
+            "_top", 
+            "framename"
+          ]
+        }, 
+        {
+          "attribute": "height", 
+          "description": "Specifies the height of an <input> element (only for type=\"image\")", 
+          "type": [
+            "pixels"
+          ]
+        }, 
+        {
+          "attribute": "list", 
+          "description": "Refers to a <datalist> element that contains pre-defined options for an <input> element", 
+          "type": [
+            "datalist_id"
+          ]
+        }, 
+        {
+          "attribute": "max", 
+          "description": "Specifies the maximum value for an <input> element", 
+          "type": [
+            "number", 
+            "date"
+          ]
+        }, 
+        {
+          "attribute": "maxlength", 
+          "description": "Specifies the maximum number of characters allowed in an <input> element", 
+          "type": [
+            "number"
+          ]
+        }, 
+        {
+          "attribute": "min", 
+          "description": "Specifies a minimum value for an <input> element", 
+          "type": [
+            "number", 
+            "date"
+          ]
+        }, 
+        {
+          "attribute": "multiple", 
+          "description": "Specifies that a user can enter more than one value in an <input> element", 
+          "type": [
+            "multiple"
+          ]
+        }, 
+        {
+          "attribute": "name", 
+          "description": "Specifies the name of an <input> element", 
+          "type": [
+            "text"
+          ]
+        }, 
+        {
+          "attribute": "pattern", 
+          "description": "Specifies a regular expression that an <input> element's value is checked against", 
+          "type": [
+            "regexp"
+          ]
+        }, 
+        {
+          "attribute": "placeholder", 
+          "description": "Specifies a short hint that describes the expected value of an <input> element", 
+          "type": [
+            "text"
+          ]
+        }, 
+        {
+          "attribute": "readonly", 
+          "description": "Specifies that an input field is read-only", 
+          "type": [
+            "readonly"
+          ]
+        }, 
+        {
+          "attribute": "required", 
+          "description": "Specifies that an input field must be filled out before submitting the form", 
+          "type": [
+            "required"
+          ]
+        }, 
+        {
+          "attribute": "size", 
+          "description": "Specifies the width, in characters, of an <input> element", 
+          "type": [
+            "number"
+          ]
+        }, 
+        {
+          "attribute": "src", 
+          "description": "Specifies the URL of the image to use as a submit button (only for \r\n    type=\"image\")", 
+          "type": [
+            "URL"
+          ]
+        }, 
+        {
+          "attribute": "step", 
+          "description": "Specifies the legal number intervals for an input field", 
+          "type": [
+            "", 
+            "number"
+          ]
+        }, 
+        {
+          "attribute": "type", 
+          "description": "Specifies the type <input> element to display", 
+          "type": [
+            "button", 
+            "checkbox", 
+            "color", 
+            "date", 
+            "datetime", 
+            "datetime-local", 
+            "email", 
+            "file", 
+            "hidden", 
+            "image", 
+            "month", 
+            "number", 
+            "password", 
+            "radio", 
+            "range", 
+            "reset", 
+            "search", 
+            "submit", 
+            "tel", 
+            "text", 
+            "time", 
+            "url", 
+            "week"
+          ]
+        }, 
+        {
+          "attribute": "value", 
+          "description": "Specifies the value of an <input> element\r\n \u00a0", 
+          "type": [
+            "text"
+          ]
+        }, 
+        {
+          "attribute": "width", 
+          "description": "Specifies the width of an <input> element (only for type=\"image\")", 
+          "type": [
+            "pixels"
+          ]
+        }
+      ], 
+      "description": "Defines an input control", 
+      "tag": "input"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "for", 
+          "description": "Specifies which form element a label is bound to", 
+          "type": [
+            "element_id"
+          ]
+        }, 
+        {
+          "attribute": "form", 
+          "description": "Specifies one or more forms the label belongs to", 
+          "type": [
+            "form_id"
+          ]
+        }
+      ], 
+      "description": "Defines a label for an <input> element", 
+      "tag": "label"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines a caption for a <fieldset> element", 
+      "tag": "legend"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "value", 
+          "description": "Specifies the value of a list item. The following list items will increment from that number (only for <ol> lists)", 
+          "type": [
+            "number"
+          ]
+        }
+      ], 
+      "description": "Defines a list item", 
+      "tag": "li"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "name", 
+          "description": "Required. Specifies the name of an image-map", 
+          "type": [
+            "mapname"
+          ]
+        }
+      ], 
+      "description": "Defines a client-side image-map", 
+      "tag": "map"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines marked/highlighted text", 
+      "tag": "mark"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines a scalar measurement within a known range (a gauge)", 
+      "tag": "meter"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines navigation links", 
+      "tag": "nav"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "data", 
+          "description": "Specifies the URL of the resource to be used by the object", 
+          "type": [
+            "URL"
+          ]
+        }, 
+        {
+          "attribute": "form", 
+          "description": "Specifies one or more forms the object belongs to", 
+          "type": [
+            "form_id"
+          ]
+        }, 
+        {
+          "attribute": "height", 
+          "description": "Specifies the height of the object", 
+          "type": [
+            "pixels"
+          ]
+        }, 
+        {
+          "attribute": "name", 
+          "description": "Specifies a name for the object", 
+          "type": [
+            "name"
+          ]
+        }, 
+        {
+          "attribute": "type", 
+          "description": "Specifies the media type of data specified in the data attribute", 
+          "type": [
+            "media_type"
+          ]
+        }, 
+        {
+          "attribute": "usemap", 
+          "description": "Specifies the name of a client-side image map to be used with the object", 
+          "type": [
+            "#mapname"
+          ]
+        }, 
+        {
+          "attribute": "width", 
+          "description": "Specifies the width of the object", 
+          "type": [
+            "pixels"
+          ]
+        }
+      ], 
+      "description": "Defines an embedded object", 
+      "tag": "object"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "reversed", 
+          "description": "Specifies that the list order should be descending (9,8,7...)", 
+          "type": [
+            "reversed"
+          ]
+        }, 
+        {
+          "attribute": "start", 
+          "description": "Specifies the start value of an ordered list", 
+          "type": [
+            "number"
+          ]
+        }, 
+        {
+          "attribute": "type", 
+          "description": "Specifies the kind of marker to use in the list", 
+          "type": [
+            "1", 
+            "A", 
+            "a", 
+            "I", 
+            "i"
+          ]
+        }
+      ], 
+      "description": "Defines an ordered list", 
+      "tag": "ol"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines an option in a drop-down list", 
+      "tag": "option"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines a paragraph", 
+      "tag": "p"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines a container for multiple image resources", 
+      "tag": "picture"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines preformatted text", 
+      "tag": "pre"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "cite", 
+          "description": "Specifies the source URL of the quote", 
+          "type": [
+            "URL"
+          ]
+        }
+      ], 
+      "description": "Defines a short quotation", 
+      "tag": "q"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "autofocus", 
+          "description": "Specifies that the drop-down list should automatically get focus when the page loads", 
+          "type": [
+            "autofocus"
+          ]
+        }, 
+        {
+          "attribute": "disabled", 
+          "description": "Specifies that a drop-down list should be disabled", 
+          "type": [
+            "disabled"
+          ]
+        }, 
+        {
+          "attribute": "form", 
+          "description": "Defines one or more forms the select field belongs to", 
+          "type": [
+            "form_id"
+          ]
+        }, 
+        {
+          "attribute": "multiple", 
+          "description": "Specifies that multiple options can be selected at once", 
+          "type": [
+            "multiple"
+          ]
+        }, 
+        {
+          "attribute": "name", 
+          "description": "Defines a name for the drop-down list", 
+          "type": [
+            "name"
+          ]
+        }, 
+        {
+          "attribute": "required", 
+          "description": "Specifies that the user is required to select a value before submitting the form", 
+          "type": [
+            "required"
+          ]
+        }, 
+        {
+          "attribute": "size", 
+          "description": "Defines the number of visible options in a drop-down list", 
+          "type": [
+            "number"
+          ]
+        }
+      ], 
+      "description": "Defines a drop-down list", 
+      "tag": "select"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines smaller text", 
+      "tag": "small"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "src", 
+          "description": "Required when <source> is used in <audio> and <video>. Specifies the URL of the media file", 
+          "type": [
+            "URL"
+          ]
+        }, 
+        {
+          "attribute": "srcset", 
+          "description": "Required when <source> is used in <picture>. Specifies the URL of the \r\n    image to use in different situations", 
+          "type": [
+            "URL"
+          ]
+        }, 
+        {
+          "attribute": "media", 
+          "description": "Accepts any valid media query that would normally be defined in a CSS ", 
+          "type": [
+            "media_query"
+          ]
+        }, 
+        {
+          "attribute": "sizes", 
+          "description": "Specifies image sizes for different page layouts", 
+          "type": [
+            ""
+          ]
+        }, 
+        {
+          "attribute": "type", 
+          "description": "Specifies the MIME-type of the resource", 
+          "type": [
+            "MIME-type"
+          ]
+        }
+      ], 
+      "description": "Defines multiple media resources for media elements (<video> and <audio>)", 
+      "tag": "source"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines a section in a document", 
+      "tag": "span"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "sortable", 
+          "description": "Specifies that the table should be sortable", 
+          "type": [
+            "sortable"
+          ]
+        }
+      ], 
+      "description": "Defines a table", 
+      "tag": "table"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "autofocus", 
+          "description": "Specifies that a text area should automatically get focus when the page loads", 
+          "type": [
+            "autofocus"
+          ]
+        }, 
+        {
+          "attribute": "cols", 
+          "description": "Specifies the visible width of a text area", 
+          "type": [
+            "number"
+          ]
+        }, 
+        {
+          "attribute": "dirname", 
+          "description": "Specifies that the text direction of the textarea will be submitted", 
+          "type": [
+            "textareaname.dir"
+          ]
+        }, 
+        {
+          "attribute": "disabled", 
+          "description": "Specifies that a text area should be disabled", 
+          "type": [
+            "disabled"
+          ]
+        }, 
+        {
+          "attribute": "form", 
+          "description": "Specifies one or more forms the text area belongs to", 
+          "type": [
+            "form_id"
+          ]
+        }, 
+        {
+          "attribute": "maxlength", 
+          "description": "Specifies the maximum number of characters allowed in the text area", 
+          "type": [
+            "number"
+          ]
+        }, 
+        {
+          "attribute": "name", 
+          "description": "Specifies a name for a text area", 
+          "type": [
+            "text"
+          ]
+        }, 
+        {
+          "attribute": "placeholder", 
+          "description": "Specifies a short hint that describes the expected value of a text area", 
+          "type": [
+            "text"
+          ]
+        }, 
+        {
+          "attribute": "readonly", 
+          "description": "Specifies that a text area should be read-only", 
+          "type": [
+            "readonly"
+          ]
+        }, 
+        {
+          "attribute": "required", 
+          "description": "Specifies that a text area is required/must be filled out", 
+          "type": [
+            "required"
+          ]
+        }, 
+        {
+          "attribute": "rows", 
+          "description": "Specifies the visible number of lines in a text area", 
+          "type": [
+            "number"
+          ]
+        }, 
+        {
+          "attribute": "wrap", 
+          "description": "Specifies how the text in a text area is to be wrapped when submitted in a form", 
+          "type": [
+            "hard", 
+            "soft"
+          ]
+        }
+      ], 
+      "description": "Defines a multiline input control (text area)", 
+      "tag": "textarea"
+    }, 
+    {
+      "attributes": [
+        {
+          "attribute": "datetime", 
+          "description": "Represent a machine-readable date/time of the <time> element", 
+          "type": [
+            "datetime"
+          ]
+        }
+      ], 
+      "description": "Defines a date/time", 
+      "tag": "time"
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines an unordered list", 
+      "tag": "ul",
+      "type": [
+            "text"
+          ]
+
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines a video or movie", 
+      "tag": "video",
+      "type": [
+            "text"
+          ]
+    },
+    {
+      "attributes": [], 
+      "description": "Defines HTML headings", 
+      "tag": "h1",
+      "type": [
+            "text"
+          ]
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines HTML headings", 
+      "tag": "h2",
+      "type": [
+            "text"
+          ]
+    },
+    {
+      "attributes": [], 
+      "description": "Defines HTML headings", 
+      "tag": "h3",
+      "type": [
+            "text"
+          ]
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines HTML headings", 
+      "tag": "h4",
+      "type": [
+            "text"
+          ]
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines HTML headings", 
+      "tag": "h5",
+      "type": [
+            "text"
+          ]
+    }, 
+    {
+      "attributes": [], 
+      "description": "Defines HTML headings", 
+      "tag": "h6",
+      "type": [
+            "text"
+          ]
+    }
+  ]
+}

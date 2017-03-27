@@ -1,0 +1,80 @@
+{
+  "toolbox" : [
+    {
+      "unique_id": "a",
+      "type": "navigation",
+      "tag": "a",
+      "display_name": "link",
+      "description": "This is a link that lets a user browse to other places and download things",
+      "code_block": "<a href='#'>link</a>",
+      "attributes": [
+        {
+          "display_name": "text",
+          "type": "inner_text",
+          "change_value": "val",
+          "path": "self",
+          "datatype": "string"
+        },
+        {
+          "display_name": "link",
+          "type": "attr",
+          "details": "href",
+          "path": "self",
+          "datatype":"string"
+        }
+      ]
+    },
+    {
+      "unique_id": "input_txt",
+      "type": "form",
+      "tag": "input",
+      "display_name": "textbox",
+      "description": "This is a textbox so users can type stuff",
+      "code_block": "<input type='text' value='textbox'>",
+      "attributes": []
+    },
+    {
+      "unique_id": "img",
+      "type": "media",
+      "tag": "img",
+      "display_name": "image",
+      "description": "This is an image that will be displayed. You'll need a url.",
+      "code_block": "<img src='img/url/here.png' alt='alt image text' />",
+      "attributes": [
+        {
+          "display_name": "source",
+          "type": "attr",
+          "details": "src",
+          "path": "self",
+          "datatype":"string"
+        }
+      ]
+    },
+    {
+      "unique_id": "div",
+      "type": "layout",
+      "tag": "div",
+      "display_name": "container",
+      "description": "This is an arbitrary container",
+      "code_block": "<div></div>",
+      "attributes": []
+    },
+    {
+      "unique_id": "label",
+      "type": "text",
+      "tag": "label",
+      "display_name": "label",
+      "description": "This is a random label to throw around",
+      "code_block": "<label>label</label>",
+      "attributes": [
+        {
+          "display_name": "text",
+          "type": "inner_text",
+          "details": "val",
+          "path": "self",
+          "datatype": "string"
+        }
+      ]
+    }
+  ]
+}

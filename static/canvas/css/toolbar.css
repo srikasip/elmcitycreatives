@@ -1,0 +1,21 @@
+a.toolbar-item
+{
+  text-decoration: none;
+  font-style: normal;
+  color:#222222;
+  background-color:transparent;
+  cursor:pointer;
+  margin-left:16px;
+  font-size:0.8em;
+  border:2px Solid transparent;
+}
+a.toolbar-item:hover
+{
+  background-color:#eeeeee;
+}
+a.toolbar-item:active
+{
+  border:2px Solid #eeeeee;
+  background-color: transparent
+
+}

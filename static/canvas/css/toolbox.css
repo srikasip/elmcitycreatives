@@ -1,0 +1,48 @@
+.toolbox-box
+{
+  width:100%;
+}
+.toolbox-item
+{
+  width:7em;
+  height:7em;
+  margin-left:1em;
+  margin-top:0.5em;
+  margin-bottom:0.5em;
+  float:left;
+}
+.arbitraryObject
+{
+  background-color:orange;
+  border:dotted 1px #333333;
+  cursor:move;
+  min-height:2em;
+  min-width:2em;
+}
+
+/*.button
+{
+  width:5em;
+  height:1em;
+  border-radius: 0.1em;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+  text-align: center;
+}
+.div
+{
+  width:100%;
+}
+.link
+{
+  color:blue;
+  text-decoration: underline;
+  background-color:transparent;
+  float:left;
+}
+.label
+{
+  color:black;
+  background-color:transparent;
+  float:left;
+}*/

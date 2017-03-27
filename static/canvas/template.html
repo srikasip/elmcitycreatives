@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Argot Builder</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="static/canvas/css/main.css">
+
+
+    <script src="static/canvas/scripts/main.js" type="application/javascript"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <template>header.html</template>
+    </div>
+    <div class="toolbar">
+      <template>toolbar.html</template>
+    </div>
+    <div class="mainContent">
+      <div class="sidebar">
+        <img src="static/canvas/images/back-btn.png" alt="toolbox hider" id="sideHideClicker" class="sideClicker">
+        <template>fileBrowser.html</template>
+      </div>
+      <div class="canvas">
+        <template>canvas.html</template>
+      </div>
+      <div class="margotInterface">
+        <template>margotInterface.html</template>
+        <img src="static/canvas/images/next-btn.png" alt="margot hider" class="margotClicker">
+      </div>
+    </div>
+    <div class="toolbox">
+      <template>toolbox_light.html</template>
+    </div>
+    <div id="contextMenu" class="dropdown clearfix">
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+        <li><a tabindex="-1" href="#">Action</a></li>
+        <li><a tabindex="-1" href="#">Another action</a></li>
+        <li><a tabindex="-1" href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a tabindex="-1" href="#">Separated link</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
