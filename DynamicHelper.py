@@ -34,26 +34,3 @@ class DynamicHelper:
       content_type = "text/html"
 
     return data, content_type
-
-  @staticmethod
-  def GetPassBackContent(mainPath, params):
-
-    params["SignupTimeStamps"] = str(datetime.now())
-    params["UseCase"] = "Data Science"
-    
-    payload = json.dumps({'fields': params, 'typecast': True})
-
-    url = "https://api.airtable.com/v0/appxXV1DjwHXfzuSL/ArgotSignupsTracker/"
-    header = {"Authorization": "Bearer keyqXy9wVseyd2L6S", "Content-type":"application/json"}
-    
-    r = requests.post(url, data=payload, headers=header, params=None)
-
-    if r.status_code == requests.codes.ok:
-      print "Success!"
-      data = '{"status":"Success"}'
-    else:
-      print "Failed"
-      data = '{"status":"Failed"}'
-
-    content_type = "application/json"
-    return data, content_type

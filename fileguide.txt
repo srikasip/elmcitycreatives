@@ -12,8 +12,6 @@ So here is the deal:
 
 * Files for the pages that a user sees are in the static folder
 
-* Canvas is the real core of the product.  Other folders that live on the same level of Canvas will be things like "User Management" or "About Us"
-
 * Within any folder in static, there is a folder for CSS files, JS files, and static assets.  
 
 * Any complicated subcontrollers (like the toolbox or soemthing) can have a subfolder inside the parent to keep all the content together. 
@@ -25,4 +23,3 @@ So here is the deal:
     2. Drag and Drop is possible
     3. Everything is absolutely positioned (so nothing can be responsive in v0.  It will look great on just your machine)
     4. No Parenting.  Body is the only parent.  And everything else is a child of body.  Body has no grand-children. (this one is tentative)
-

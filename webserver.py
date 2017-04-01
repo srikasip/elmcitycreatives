@@ -20,28 +20,13 @@ def app(environ, start_response):
         params[parts[0]] = parts[1]
 
   content_type = ""
-  if mainPath != "static" and mainPath != "passback":
+  if mainPath != "static":
     #Route the user to the right page
     data, content_type = dynamic.GetDynamicContent(mainPath)
 
   elif mainPath == "static":
     #Get the static content resource that is being asked for
     data, content_type = static.GetStaticContent(fullPath)
-  elif mainPath == "passback":
-    try:
-      request_body_size = int(environ.get('CONTENT_LENGTH', 0))
-    except (ValueError):
-      request_body_size = 0
-
-    #If the request is empty, then just ignore the data and wait for one that has legit content.
-    if request_body_size > 0:
-      request_body = environ['wsgi.input'].read(request_body_size)
-      sentData = json.loads(request_body)
-      data, content_type = dynamic.GetPassBackContent(mainPath, sentData)
-    else:
-      data = '{"status": "no_data_sent"}'
-      content_type = "application/json"
-
 
   start_response("200 OK", [
     ("Content-Type", content_type),
