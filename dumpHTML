@@ -1,0 +1,48 @@
+<body>
+    <div class="heroBox">
+      <h1><a class="heroLink" data-partner="weNav">We</a></h1>
+      <a class="linkPartner" id="weNav">meet the team</a>
+      <h1><a class="heroLink" data-partner="buildNav">Build</a></h1>
+      <a class="linkPartner" id="buildNav">understand our process</a>
+      <h1><a class="heroLink" data-partner="webNav">Websites</a></h1>
+      <a class="linkPartner" id="webNav">check out our past work</a>
+    </div>
+    <div class="header">
+      <svgtemplate>ecc_name.svg</svgtemplate>
+    </div>
+    <div id="team_block" class="block clearfix">
+      <h1>Meet the team</h1>
+      <div class="team-members">
+        <div class="teamer-box">
+          <div class="teamer-group">
+            <img class="teamer" src="static/images/srikar_profile.jpg" alt="Srikar Prasad" />
+            <span class="teamer-caption teamer-name">Srikar</span>
+            <span class="teamer-caption">Coder/Designer</span>
+            <span class="teamer-caption">X-Googler</span>
+            <span class="teamer-caption">Music lover</span>
+          </div>
+        </div>
+        <div class="teamer-box">
+          <div class="teamer-group">
+            <img class="teamer" src="static/images/rathna_profile.png" alt="Rathna Prasad" />
+            <span class="teamer-caption teamer-name">Rathna</span>
+            <span class="teamer-caption">Storyteller</span>
+            <span class="teamer-caption">Writer</span>
+            <span class="teamer-caption">Book lover</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="process_block" class="block">
+      <h1>Our Building Process</h1>
+      <br /><br /><br /><br />
+    </div>
+    <div id="cases_block" class="block">
+      <h1>Past Website Designs</h1>
+      <br /><br /><br /><br />
+    </div>
+    <div id="footer_block" class="block blackBack">
+      <h1>Footer</h1>
+    </div>
+  </body>

@@ -1,0 +1,166 @@
+html, body{
+  margin:0;
+  padding:0;
+  font-size: 14pt;
+  height:100%;
+  width:100%;
+  font-family: 'Work Sans', sans-serif;
+}
+body{
+  background-image: url("../images/bg4.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:100% auto;
+}
+h1, h2, h3, h4
+{
+  font-family: 'Eczar', serif;
+  margin:0px;
+  padding:0px;
+}
+
+.heroBox h1
+{
+  font-size:8em;
+  font-weight: bold;
+  display:block;
+  display:table;
+}
+a.heroLink
+{
+  text-decoration: none;
+  color:#ffffff;
+  cursor:pointer;
+  display:inline;
+}
+a.heroLink:hover
+{
+  text-decoration: none;
+  color:#55fb2f;
+}
+a.linkPartner {
+  color:#55fb2f;
+  display:none;
+  margin-top:-2.0em;
+  padding-bottom:0.6em;
+}
+.header
+{
+  width:100%;
+  text-align: center;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+  background-color:#181818;
+  margin-top:-3em;
+  color:#fff;
+  vertical-align: middle;
+}
+#header_name
+{
+  height:2em;
+  width:auto;
+  fill:#fff;
+  cursor: pointer;
+}
+
+#header_name:hover
+{
+  fill:#55fb2f;
+}
+
+@media only screen and (max-width: 882px) {
+  body{
+    background-size: auto 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heroBox h1{
+    font-size:5em;
+  }
+  a.linkPartner
+  {
+    margin-top:-1.5em;
+    padding-bottom:0.1em;
+  }
+}
+
+.heroBox
+{
+  float:none;
+  min-height:100%;
+  width:100%;
+  background-color:rgba(24,24,24,0.75);
+  color:#ffffff;
+  margin:0;
+  padding-left:32px;
+  padding-top:32px;
+  padding-bottom:3em;
+}
+
+
+.block
+{
+  width:100%;
+  padding-left:32px;
+  padding-top:32px;
+  background-color:#fff;
+}
+.team-members
+{
+  text-align:center;
+  padding-top:16px;
+  padding-bottom: 16px;
+  height:100%;
+  text-align:center;
+}
+.teamer-group
+{
+  position:relative;
+  text-align: center;
+  float:left;
+  margin-right:50px;
+  cursor: pointer;
+}
+.teamer
+{
+  height:150px;
+  width:150px;
+  border-radius:75px;
+}
+.teamer-caption
+{
+  display:block;
+  clear:both;
+  font-size:0.8em;
+  color:#555;
+}
+.teamer-name
+{
+  /*font-weight: bold;*/
+  margin-top:10px;
+  font-size:1em;
+  color:#333;
+}
+@media only screen and (max-width: 436px){
+  .teamer
+  {
+    height:120px;
+    width:120px;
+    border-radius:60px;
+  } 
+}
+
+.blackBack
+{
+  background-color:#181818;
+  color:#fff;
+  height:10em;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
