@@ -22,7 +22,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
     
-
     <link href="https://fonts.googleapis.com/css?family=Eczar|Work+Sans" rel="stylesheet">
 
     <script src="static/scripts/home.js" type="application/javascript"></script>    
@@ -41,15 +40,128 @@
     </script>
   </head>
   <body>
+    <div class="menu menu_bottom">
+      <svgtemplate>ecc_name.svg</svgtemplate>
+    </div>
     <div class="scene clearfix" id="welcomeScene">
       <div class="overlay clearfix">
         <a class="heroLink" data-partner="aboutExp">We</a>
-        <span class="linkExplainer" id="aboutExp">About the team</span>
+        <span class="linkExplainer" id="aboutExp">Our philosophy and team</span>
         <a class="heroLink" data-partner="processExp">Build</a>
-        <span class="linkExplainer" id="processExp">About our process</span>
+        <span class="linkExplainer" id="processExp">Our process, explained</span>
         <a class="heroLink" data-partner="portfolioExp">Websites</a>
-        <span class="linkExplainer" id="portfolioExp">About our past work</span>
+        <span class="linkExplainer" id="portfolioExp">Our past work</span>
       </div>
+    </div>
+    <div class="scene clearfix" id="teamScene">
+      <div class="stampHolder">
+          <svgtemplate>ecc_stamp.svg</svgtemplate>
+      </div>
+      <div class="sceneText">
+        <h1 class="sceneTitle">Our Philosophy</h1>
+        <h2>Your site should tell your story</h2>
+        <h2>With bold &amp; beautiful designs</h2>
+        <h2>And responsive layouts</h2>
+        <h2>That measure success</h2>
+      </div>
+    </div>
+    <div class="scene clearfix" id="teamScene_two">
+      <div class="overlay clearfix" id="team_content">
+        <h1 class="sceneTitle">Our Team</h1>
+        <div class="teamer-group">
+          <img class="teamer" src="static/images/srikar_profile.jpg" alt="Srikar Prasad" />
+          <span class="teamer-caption teamer-name">Srikar</span>
+          <span class="teamer-caption">Coder/Designer</span>
+          <span class="teamer-caption">X-Googler</span>
+          <span class="teamer-caption">Music lover</span>
+        </div>
+        <div class="teamer-group">
+          <img class="teamer" src="static/images/rathna_profile.png" alt="Rathna Prasad" />
+          <span class="teamer-caption teamer-name">Rathna</span>
+          <span class="teamer-caption">Storyteller</span>
+          <span class="teamer-caption">Writer</span>
+          <span class="teamer-caption">Book lover</span>
+        </div>
+        <div id="btnContact">
+          <button>Contact us</button>
+        </div>
+      </div>
+    </div>
+    <div class="scene clearfix" id="processScene">
+      <h1 class="sceneTitle">Our Process</h1>
+      <p class="processExplainer">
+        Our process lets us understand your needs early. The whole process can take anywhere from 2 to 10 weeks depending on the scope of your project.
+        <br /><br />
+        We <span class="learnStop">understand</span> by talking to you, asking you to fill out a quick survey, and sharing examples.
+        <br /><br />
+        Good <span class="freestyleStop">design</span> is all about early feedback.  We build concepts, get your thoughts and settle on a direction for your site. Then the building starts.
+        <br /><br />
+        Finally, we gather your <span class="feedbackStop">feedback</span> to make sure your site is just right. We then deploy the site, point your URL to the new site, and turn on analytics.
+      </p>
+      <div class="processPhases" id="learnPhase">Understand</div>
+      <div class="processPhases" id="freestylePhase">Design &amp; Build</div>
+      <div class="processPhases" id="feedbackPhase">Feedback</div>
+      <div id="timeline">
+        <div class="circle learnStop">
+          <div class="circleItem">Connect with us</div>
+        </div>
+        <div class="circle learnStop">
+          <div class="circleItem">Learn your needs</div>
+        </div>
+        <div class="circle freestyleStop">
+          <div class="circleItem">Quote + Timeline</div>
+        </div>
+        <div class="circle freestyleStop">
+          <div class="circleItem">Concepts + Feedback</div>
+        </div>
+        <div class="circle freestyleStop">
+          <div class="circleItem">Build Website</div>
+        </div>
+        <div class="circle feedbackStop">
+          <div class="circleItem">Final Feedback</div>
+        </div>
+        <div class="circle feedbackStop">
+          <div class="circleItem">Launch + Measure</div>
+        </div>
+      </div>
+    </div>
+    <div class="scene clearfix" id="portfolioScene">
+      <h1 class="sceneTitle">Our Past Work</h1>
+      <div class="website">
+        <img class="website" src="static/images/argot.png" alt="Argot Data Science"/>
+        <span class='website-name'>Argot Data Science</span>
+        <span>www.myargot.com</span>
+        <span>Design, Coding and Measurement</span>
+        <span>Video Animation</span>
+      </div>
+      <div class="website">
+        <img class="website" src="static/images/getabite.png" alt="Getabite"/>
+        <span class='website-name'>GetABite</span>
+        <span>getabite.co</span>
+        <span>Coding</span>
+      </div>
+      <div class="website">
+        <img class="website" src="static/images/rathnaprasad.png" alt="Rathna Author Website"/>
+        <span class='website-name'>Author Website</span>
+        <span>rathnaprasad.com</span>
+        <span>Coding</span>
+      </div>
+    </div>
+    <div class="scene clearfix" id="footerScene">
+      <h1 class="sceneTitle">Other Stuff</h1>
+      <div class="address clearfix">
+        <span>195 Church St.</span>
+        <span>Suite 1700</span>
+        <span>New Haven, CT 06510</span>
+      </div>
+      
+      <div class="contact clearfix">
+        <span>Feel free to contact us:</span>
+        <span>Twitter: @srikasip</span>
+        <span>Email: srikasip@gmail.com</span>
+      </div>
+      
+      <div class="copyright clearfix">copyright - Elm City Creatives, Inc 2017</div>
     </div>
   </body>
 </html>

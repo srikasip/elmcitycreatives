@@ -27,8 +27,8 @@ class DynamicHelper:
         with open("static/images/"+pageURL) as svg:
           SVG_content = svg.read()
           SVG_soup = bs(SVG_content)
-        
-        block.replaceWith(SVG_soup)
+
+        block.replaceWith(SVG_soup.find("svg"))
 
       data = str(pageSoup.prettify())
       content_type = "text/html"
