@@ -140,13 +140,21 @@ a.heroLink:hover + span.linkExplainer
   text-align:left;
   padding-left:32px;
 }
+.menu_white
+{
+  color:#fff;
+}
+.menu_black
+{
+  color:#252525;
+}
 #header_name
 {
-  fill:#fff;
   height:2em;
   width:auto;
   cursor:pointer;
 }
+
 #header_name:hover
 {
   fill:#55fb2f;

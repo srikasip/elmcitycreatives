@@ -13,15 +13,10 @@ function UpdatePosition($menuBar, leftPadding)
   // documentHeight = $(document).outerHeight();
   // numScreens = (documentHeight - windowHeight)/windowHeight;
   currScreen = topScroll/parseFloat(windowHeight-$menuBar.outerHeight());
-  console.log(currScreen);
+  SetBackgroundyStuff($menuBar, currScreen);
+
   if (currScreen < 1)
   {
-    //ensure that we go back to the fixedMenu
-    if($menuBar.hasClass("menu_top"))
-    {
-      $menuBar.removeClass("menu_top");
-      $menuBar.addClass("menu_bottom");
-    }
     topPos = ((windowHeight-topScroll)-$menuBar.outerHeight());
     topPos = Math.round(topPos);
 
@@ -39,7 +34,50 @@ function UpdatePosition($menuBar, leftPadding)
       $menuBar.addClass("menu_top");
       $menuBar.css("top", "0");
       $("#header_name").css("margin-left","0px");
-      $("#header_name").css("width","auto")
+      $("#header_name").css("width","auto");
+    }
+  }
+}
+
+function SetBackgroundyStuff($menuBar, currScreen)
+{
+  if (currScreen < 1)
+  {
+    //ensure that we go back to the fixedMenu
+    if($menuBar.hasClass("menu_top"))
+    {
+      $menuBar.removeClass("menu_top");
+      $menuBar.addClass("menu_bottom");
+    }
+  }
+  else
+  {
+    if($menuBar.hasClass("menu_bottom"))
+    {
+      $menuBar.removeClass("menu_bottom");
+      $menuBar.addClass("menu_top");
+      $menuBar.css("top", "0");
+      $("#header_name").css("margin-left","0px");
+      $("#header_name").css("width","auto");
+    }
+  }
+
+  if(currScreen>=3)
+  {
+    if ($menuBar.hasClass("menu_white"))
+    {
+      $menuBar.removeClass("menu_white");
+      $menuBar.addClass("menu_black");
+      $("#header_name").attr("fill", "#252525");
+    }
+  }
+  else
+  {
+    if ($menuBar.hasClass("menu_black"))
+    {
+      $menuBar.removeClass("menu_black");
+      $menuBar.addClass("menu_white");
+      $("#header_name").attr("fill", "#ffffff");
     }
   }
 }
