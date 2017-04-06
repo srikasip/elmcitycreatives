@@ -67,7 +67,7 @@ a.heroLink:hover + span.linkExplainer
 #welcomeScene
 {
   padding-top:0;
-  background-image: url("../images/bg4.jpg");
+  background-image: url("../images/bg4-min.jpg");
 }
 #welcomeScene .overlay
 {
@@ -83,7 +83,7 @@ a.heroLink:hover + span.linkExplainer
 #teamScene_two
 {
   padding-top:0;
-  background-image: url("../images/bg1.jpg");
+  background-image: url("../images/bg1-min.jpg");
   color:#fff;
 }
 #teamScene_two .overlay

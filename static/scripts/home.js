@@ -2,6 +2,7 @@ $(document).ready(function(){
   menuBar = $(".menu");
   leftPad = 64;
 
+  //SetSceneEvents();
   $(document).scroll(function(){UpdatePosition(menuBar, leftPad);});
   $(window).resize(function(){UpdatePosition(menuBar, leftPad);});
 });
