@@ -13,11 +13,10 @@
     <title>Elm City Creatives</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Eczar|Work+Sans" rel="stylesheet">
 
@@ -44,112 +43,128 @@
     <div class="menu menu_bottom menu_white">
       <svgtemplate>ecc_name.svg</svgtemplate>
     </div>
-    <div class="scene clearfix" id="welcomeScene">
-      <div class="overlay clearfix">
-        <a class="heroLink" data-partner="aboutExp">We</a>
-        <span class="linkExplainer" id="aboutExp">Our philosophy and team</span>
-        <a class="heroLink" data-partner="processExp">Build</a>
-        <span class="linkExplainer" id="processExp">Our process, explained</span>
-        <a class="heroLink" data-partner="portfolioExp">Websites</a>
-        <span class="linkExplainer" id="portfolioExp">Our past work</span>
+    <div class="scene" id="welcomeScene">
+      <div class="overlay">
+        <a class="heroLink">We</a>
+        <span class="linkExplainer">Our philosophy and team</span>
+        <a class="heroLink">Build</a>
+        <span class="linkExplainer">Our process explained</span>
+        <a class="heroLink">Websites</a>
+        <span class="linkExplainer">Our past work</span>
       </div>
     </div>
-    <div class="scene clearfix" id="teamScene">
+    <div class="scene" id="philosophyScene">
       <div class="stampHolder">
           <svgtemplate>ecc_stamp.svg</svgtemplate>
       </div>
-      <div class="sceneText">
+      <div class="sceneText clearfix">
         <h1>Our Philosophy</h1>
-        <h2>Your site should tell your story</h2>
-        <h2>With bold &amp; beautiful designs</h2>
-        <h2>And responsive layouts</h2>
-        <h2>That measure success</h2>
-      </div>
+        <h2>Your site should:
+        <h3>tell your story</h3>
+        <h3>be bold</h3> 
+        <h3>be beautiful</h3>
+        <h3>be mobile friendly</h3>
+        <h3>measure success</h3>
+      </div>      
     </div>
-    <div class="scene clearfix" id="teamScene_two">
+    <div class="scene" id="teamScene">
       <div class="overlay clearfix" id="team_content">
-        <h1 class="sceneTitle">Our Team</h1>
-        <div class="teamer-group">
+        <h1 class="sceneTitle" id="ourTeamTitle">Our Team</h1>
+        
+        <div class="teamer-group" id="srikar_teamer">
           <img class="teamer" src="static/images/srikar_profile-min.jpg" alt="Srikar Prasad" />
           <span class="teamer-caption teamer-name">Srikar</span>
           <span class="teamer-caption">Coder/Designer</span>
           <span class="teamer-caption">X-Googler</span>
           <span class="teamer-caption">Music lover</span>
         </div>
-        <div class="teamer-group">
+        <div class="teamer-spacer"></div>
+        <div class="teamer-group" id="rathna_teamer">
           <img class="teamer" src="static/images/rathna_profile-min.png" alt="Rathna Prasad" />
           <span class="teamer-caption teamer-name">Rathna</span>
           <span class="teamer-caption">Storyteller</span>
           <span class="teamer-caption">Writer</span>
           <span class="teamer-caption">Book lover</span>
         </div>
+        <!-- 
         <div id="btnContact">
           <button>Contact us</button>
-        </div>
+        </div> 
+        -->
       </div>
     </div>
-    <div class="scene clearfix" id="processScene">
+    <div class="scene" id="processScene">
       <h1 class="sceneTitle">Our Process</h1>
+      <p class="smallExplainer">
+        Our process takes between 3 and 6 weeks.
+        <br />
+        There are three phases:
+        <br />
+        <span class="tabber learnStop">understand</span>
+        <span class="tabber freestyleStop">design</span>
+        and <span class="tabber feedbackStop">feedback</span>
+      </p>
       <p class="processExplainer">
         Our process lets us understand your needs early. The whole process can take anywhere from 2 to 10 weeks depending on the scope of your project.
         <br /><br />
-        We <span class="learnStop">understand</span> by talking to you, asking you to fill out a quick survey, and sharing examples.
+        We <span class="tabber learnStop">understand</span> by talking to you, asking you to fill out a quick survey, and sharing examples.
         <br /><br />
-        Good <span class="freestyleStop">design</span> is all about early feedback.  We build concepts, get your thoughts and settle on a direction for your site. Then the building starts.
+        Good <span class="tabber freestyleStop">design</span> is all about early feedback.  We build concepts, get your thoughts and settle on a direction for your site. Then the building starts.
         <br /><br />
-        Finally, we gather your <span class="feedbackStop">feedback</span> to make sure your site is just right. We then deploy the site, point your URL to the new site, and turn on analytics.
+        Finally, we gather your <span class="tabber feedbackStop">feedback</span> to make sure your site is just right. We then deploy the site, point your URL to the new site, and turn on analytics.
       </p>
-      <div class="processPhases" id="learnPhase">Understand</div>
-      <div class="processPhases" id="freestylePhase">Design &amp; Build</div>
-      <div class="processPhases" id="feedbackPhase">Feedback</div>
-      <div id="timeline">
-        <div class="circle learnStop">
-          <div class="circleItem">Connect with us</div>
-        </div>
-        <div class="circle learnStop">
-          <div class="circleItem">Learn your needs</div>
-        </div>
-        <div class="circle freestyleStop">
-          <div class="circleItem">Quote + Timeline</div>
-        </div>
-        <div class="circle freestyleStop">
-          <div class="circleItem">Concepts + Feedback</div>
-        </div>
-        <div class="circle freestyleStop">
-          <div class="circleItem">Build Website</div>
-        </div>
-        <div class="circle feedbackStop">
-          <div class="circleItem">Final Feedback</div>
-        </div>
-        <div class="circle feedbackStop">
-          <div class="circleItem">Launch + Measure</div>
+      <div class="processMetroMap">
+        <div class="processPhases" id="learnPhase">Understand</div>
+        <div class="processPhases" id="freestylePhase">Design &amp; Build</div>
+        <div class="processPhases" id="feedbackPhase">Feedback</div>
+        <div id="timeline">
+          <div class="circle learnStop">
+            <div class="circleItem">Connect with us</div>
+          </div>
+          <div class="circle learnStop">
+            <div class="circleItem">Learn your needs</div>
+          </div>
+          <div class="circle freestyleStop">
+            <div class="circleItem">Quote + Timeline</div>
+          </div>
+          <div class="circle freestyleStop">
+            <div class="circleItem">Concepts + Feedback</div>
+          </div>
+          <div class="circle freestyleStop">
+            <div class="circleItem">Build Website</div>
+          </div>
+          <div class="circle feedbackStop">
+            <div class="circleItem">Final Feedback</div>
+          </div>
+          <div class="circle feedbackStop">
+            <div class="circleItem">Launch + Measure</div>
+          </div>
         </div>
       </div>
     </div>
     <div class="scene clearfix" id="portfolioScene">
       <h1 class="sceneTitle">Our Past Work</h1>
-      <div class="website">
-        <img class="website" src="static/images/argot-min.png" alt="Argot Data Science"/>
+      <div class="website firstchildy">
         <span class='website-name'>Argot Data Science</span>
+        <img class="website" src="static/images/argot-min.png" alt="Argot Data Science"/>
         <span>www.myargot.com</span>
         <span>Design, Coding and Measurement</span>
         <span>Video Animation</span>
       </div>
       <div class="website">
-        <img class="website" src="static/images/getabite.png" alt="Getabite"/>
         <span class='website-name'>GetABite</span>
+        <img class="website" src="static/images/getabite.png" alt="Getabite"/>
         <span>getabite.co</span>
         <span>Coding</span>
       </div>
       <div class="website">
-        <img class="website" src="static/images/rathnaprasad-min.png" alt="Rathna Author Website"/>
         <span class='website-name'>Author Website</span>
+        <img class="website" src="static/images/rathnaprasad-min.png" alt="Rathna Author Website"/>
         <span>rathnaprasad.com</span>
         <span>Coding</span>
       </div>
     </div>
     <div class="scene clearfix" id="footerScene">
-      <h1 class="sceneTitle">Other Stuff</h1>
       <div class="address clearfix">
         <span>195 Church St.</span>
         <span>Suite 1700</span>
@@ -162,7 +177,7 @@
         <span>Email: srikasip@gmail.com</span>
       </div>
       
-      <div class="copyright clearfix">copyright - Elm City Creatives, Inc 2017</div>
+      <div class="copyright clearfix">copyright - Elm City Creatives, Inc 2017</div>      
     </div>
   </body>
 </html>

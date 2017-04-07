@@ -1,46 +1,188 @@
-html, body{
-  margin:0;
-  padding:0;
-  font-size: 14pt;
-  height:100%;
-  width:100%;
-  font-family: 'Work Sans', sans-serif;
+/* Common Utilites */
+
+*, *:before, *:after {
+  box-sizing: border-box;
 }
+
+html, body{
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100%;
+  font-size:14pt;
+  font-family: 'Work Sans', sans-serif;
+  background-color:yellow;
+}
+a {cursor: pointer;}
+
 .scene
 {
-  min-height:100vh;
-  width:100%;
-  padding-top:3em;
+  height:100%;
+  background-color:orange;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size:cover;
+  padding:0;
+  padding-top:3em;
 }
-a{cursor:pointer;}
-
 .overlay
 {
+  height:100%;
   background-color:rgba(25,25,25,0.6);
-  position:relative;
-  width:100%;
-  min-height:100vh;
-  padding-top:32px;
-  padding-left:32px;
+  padding:32px;
 }
+h1
+{
+  font-family: 'Eczar', serif;
+  margin:0px;
+  padding:0px;
+}
+.clearfix:after
+{
+  display:table;
+  content:"";
+  clear:both;
+}
+
+
+/* Specific Scene Backgrounds */
+#welcomeScene{
+  padding:0;
+  padding-bottom:3em;
+  background-image:url(../images/bg4-min.jpg);
+}
+
+#philosophyScene{
+  background: -webkit-linear-gradient(26deg, rgb(204, 57, 123), rgb(246, 129, 1));
+  background: linear-gradient(26deg, rgb(204, 57, 123), rgb(246, 129, 1));
+  background-attachment: fixed;
+  height:450%;
+}
+#teamScene{
+  padding-top:0;
+  background-image: url("../images/bg1-min.jpg");
+  color:#fff;
+  height:200vh;
+}
+#teamScene .overlay
+{
+  padding-top:3em;
+  text-align: center;
+  height: 150vh;
+}
+#processScene
+{
+  background-color:#fff;
+  text-align: center;
+}
+#portfolioScene
+{
+  background-color:#fff;
+  text-align:center;
+  height:auto;
+  padding-bottom:16px;
+}
+#footerScene
+{
+  background-color:#252525;
+  height:auto;
+  padding-left:32px;
+  padding-right:32px;
+  padding-bottom:16px;
+}
+
+
+/* Menu Classes */
+#header_name
+{
+  height:2em;
+  width:auto;
+  fill:#ffffff;
+}
+#header_name:hover
+{
+  fill:#55fb2f;
+}
+
+.menu
+{
+  z-index:10;
+  width:100%;
+  position:fixed;
+  left:0;
+  height:3em;
+  padding-left:32px;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+
+  -webkit-transition: background 1.5s; /* Safari */
+  transition: background 1.5s;
+
+}
+.menu_bottom
+{
+  bottom:0;
+  text-align:center;
+  background-color:#252525;
+}
+.menu_top
+{
+  top:0;
+  text-align:left;
+  background-color:transparent;
+}
+.menu_white
+{
+  color:#fff;
+}
+.menu_black
+{
+  color:#252525;
+  background-color:#fff;
+}
+@media only screen and (max-width: 450px) {
+  .menu
+  {
+    width:100%;
+    position:fixed;
+    left:0;
+    height:3em;
+    padding-left:32px;
+    padding-top:0.75em;
+    padding-bottom:0.75em;
+    -webkit-transition: background 1.5s; /* Safari */
+    transition: background 1.5s;
+  }
+  #header_name
+  {
+    height:1.5em;
+    width:auto;
+    fill:#ffffff;
+  }
+}
+
+/* Welcome Scene Classes */
 a.heroLink
 {
   font-family: 'Eczar', serif;
   margin:0;
+  margin-top:32px;
   padding:0;
   color:#fff;
   text-decoration: none;
-  font-size:25vmin;
+  font-size:22vmin;
   line-height:1em;
 
   vertical-align: top;
   display:block;
   float:left;
   clear:both;
+}
+a.heroLink:first-child
+{
+  margin:0;
+  margin-top:0;
 }
 
 a.heroLink:hover
@@ -50,7 +192,7 @@ a.heroLink:hover
 }
 span.linkExplainer
 {
-  margin:0px;
+  margin:0;
   padding:0px;
   color:#fff;
   margin-top:-1.5em;
@@ -58,121 +200,13 @@ span.linkExplainer
   float:left;
   clear:both;
 }
+
 a.heroLink:hover + span.linkExplainer
 {
   display:block;
 }
 
-/*Section Colors*/
-#welcomeScene
-{
-  padding-top:0;
-  background-image: url("../images/bg4-min.jpg");
-}
-#welcomeScene .overlay
-{
-  padding-bottom:3em;
-}
-#teamScene
-{
-  background: -webkit-linear-gradient(26deg, rgb(204, 57, 123), rgb(246, 129, 1));
-  background: linear-gradient(26deg, rgb(204, 57, 123), rgb(246, 129, 1));
-  background-attachment: fixed;
-  padding-left: 32px;
-  height:400vh;
-}
-#teamScene_two
-{
-  padding-top:0;
-  background-image: url("../images/bg1-min.jpg");
-  color:#fff;
-}
-#teamScene_two .overlay
-{
-  padding-top:3em;
-  text-align: center;
-}
-#processScene
-{
-  text-align:center;
-  padding-top:3em;
-  color:#252525;
-}
-#portfolioScene
-{
-  text-align:center;
-  padding-top:4em;
-  color:#252525;
-}
-#footerScene
-{
-  padding-top:1em;
-  background-color:#252525;
-  color:#fff;
-  min-height:auto;
-  height:auto;
-  padding-left:32px;
-  padding-right:32px;
-}
-
-.menu
-{
-  position:fixed;
-  background-color:rgba(25,25,25,0);
-  -webkit-transition: background 1.5s; /* Safari */
-  transition: background 1.5s;
-  padding-top:0.5em;
-  padding-bottom:0.5em;
-  z-index:25;
-  width:100%;
-  left:0;
-}
-.menu_bottom
-{
-  bottom:0;
-  background-color:rgba(25,25,25,1);
-  text-align:center;
-  padding-left:0;
-}
-.menu_top
-{
-  top:0;
-  background-color:rgba(25,25,25,0);
-  text-align:left;
-  padding-left:32px;
-}
-.menu_white
-{
-  color:#fff;
-}
-.menu_black
-{
-  color:#252525;
-}
-#header_name
-{
-  height:2em;
-  width:auto;
-  cursor:pointer;
-}
-
-#header_name:hover
-{
-  fill:#55fb2f;
-}
-h1, h2, h3, h4
-{
-  font-family: 'Eczar', serif;
-  margin:0px;
-  padding:0px;
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+/* Philosophy Scene Classes */
 .stamp_paths
 {
   fill:inherit;
@@ -196,6 +230,7 @@ h1, h2, h3, h4
   position:fixed;
   height:70vmin;
 }
+
 .sceneText
 {
   display:none;
@@ -207,24 +242,71 @@ h1, h2, h3, h4
 {
   font-size:6vw;
   text-align:left;
-  margin:0;
-  padding:0;
 }
 .sceneText h2
+{
+  top:6vw;
+  font-size:5vw;
+  text-align:left;
+  position:absolute;
+  opacity:1.0;  
+}
+.sceneText h3
 {
   top:6vw;
   font-size:4vw;
   text-align:left;
   position:absolute;
-  transform: translateY(8vw);
+  margin-top:2.5em;
   opacity:0.0;
+
+}
+@media only screen and (max-width: 808px) {
+  .stampHolder
+  {
+    display:none;
+    position:fixed;
+    height:0px;
+    width:0px;
+  }
+  .sceneText
+  {
+    display:none;
+    position:fixed;
+    color:#fff;
+    text-align: center;
+  }
+  .sceneText h1
+  {
+    display:block;
+    clear:both;
+    font-size: 12vw;
+    text-align:center;
+  }
+  .sceneText h2
+  {
+    display:block;
+    clear:both;
+    font-size:9vw;
+    margin-top:1.5em;
+    width:100%;
+    text-align:center;
+    opacity:1.0;
+  }
+  .sceneText h3
+  {
+    font-size:8vw;
+    margin-top:2em;
+    text-align:center;
+    display:block;
+    width:100%;
+    clear:both;
+    opacity:0.0;
+  }
 }
 
-h1.sceneTitle
-{
-  font-size:6vw;
-  text-align:center;
-}
+
+/* Team Scene Classes */
 .team-members
 {
   text-align:center;
@@ -233,14 +315,26 @@ h1.sceneTitle
   height:100%;
   text-align:center;
 }
+.teamer-spacer
+{
+  display:inline-block;
+  max-width:50px;
+  min-width:1%;
+}
 .teamer-group
 {
   display:inline-block;
   text-align: center;
-  margin-left:25px;
-  margin-right:25px;
   margin-top:3em;
   cursor: pointer;
+}
+.teamer-group:first-child
+{
+  padding-right:25px;
+}
+.teamer-group:last-child
+{
+  margin-right:0px;
 }
 .teamer
 {
@@ -291,16 +385,19 @@ h1.sceneTitle
     border-radius:60px;
   } 
 }
+
+/* Process Classes */
+
 div#timeline
 {
   height:2vw;
   width:82vw;
   background-color:#252525;
   overflow: visible;
-  margin-left:8vw;
   vertical-align: middle;
   padding:0;
   border-radius: 2.5vw;
+  margin-left:8vw;
   clear:both;
 
 }
@@ -371,7 +468,7 @@ p.processExplainer
   margin-bottom:5vh;
   color:#fff;
 }
-p.processExplainer span{
+span.tabber{
   display:inline-block;
   padding-left:5px;
   padding-right:5px;
@@ -392,6 +489,46 @@ p.processExplainer span{
   background-color:#88B04B;
   width:18vw;
 }
+p.smallExplainer
+{
+  width:70%;
+  text-align:left;
+  margin-left:auto;
+  margin-right:auto;
+  font-size: 1em;
+  display:none;
+}
+@media only screen and (max-width: 700px){
+  p.processExplainer
+  {
+    display:none;
+  }
+  p.smallExplainer
+  {
+    display:block;
+  }
+  .processPhases
+  {
+    display:none;
+  }
+  .processMetroMap
+  {
+    clear:both;
+    margin-top:4em;
+  }
+  div.circle div.circleItem
+  {
+    width:200px;
+    transform: rotateZ(90deg) translateX(100px);
+    margin-left:-6em;
+    vertical-align: middle;
+    text-align: left
+  }
+
+}
+
+/* Portfolio Classes */
+
 div.website
 {
   width:20vw;
@@ -412,8 +549,30 @@ div.website span
 .website-name
 {
   font-size:1.2em;
+  text-align:left;
+  padding-bottom:0.5em;
+}
+@media only screen and (max-width: 1049px){
+  div.firstchildy
+  {
+    margin-top:1em;
+  }
+  .website-name
+  {
+    text-align: center;
+  }
+  div.website
+  {
+    width:80vw;
+  }
+  img.website
+  {
+    width:100%;
+  }
 }
 
+
+/* Footer Scene */
 #footerScene div span
 {
   display:block;
@@ -444,11 +603,13 @@ div.website span
   {
     float: none;
     clear:both;
+    text-align:center;
   }
   #footerScene .contact
   {
     float:none;
     clear:both;
+    text-align:center;
     margin-top:1em;
   }
 }
