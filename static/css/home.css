@@ -79,6 +79,7 @@ a.heroLink:hover + span.linkExplainer
   background: linear-gradient(26deg, rgb(204, 57, 123), rgb(246, 129, 1));
   background-attachment: fixed;
   padding-left: 32px;
+  height:400vh;
 }
 #teamScene_two
 {
@@ -171,6 +172,7 @@ h1, h2, h3, h4
   display: table;
   clear: both;
 }
+
 .stamp_paths
 {
   fill:inherit;
@@ -181,34 +183,41 @@ h1, h2, h3, h4
   width:auto;
   fill:#fff;
 }
+
 .box_path
 {
   stroke:#fff;
   fill:none;
 }
+
 .stampHolder
 {
-  float:left;
+  display:none;
+  position:fixed;
   height:70vmin;
-  margin-top:10vh;
 }
 .sceneText
 {
-  width:50%;
-  float:left;
+  display:none;
+  position:fixed;
   color:#fff;
   text-align: left;
-  margin-top:10vh;
-  margin-left:32px;
 }
 .sceneText h1
 {
   font-size:6vw;
+  text-align:left;
+  margin:0;
+  padding:0;
 }
 .sceneText h2
 {
+  top:6vw;
   font-size:4vw;
-  margin-top:1em;
+  text-align:left;
+  position:absolute;
+  transform: translateY(8vw);
+  opacity:0.0;
 }
 
 h1.sceneTitle
