@@ -42,14 +42,25 @@
   <body>
     <div class="menu menu_bottom menu_white">
       <svgtemplate>ecc_name.svg</svgtemplate>
+      <button class="hamburger">&#9776;</button>
+      <button class="cross">&#735;</button>
+      <div class="menu_list">
+        <ul>
+          <a href="#welcomeScene"><li>Welcome</li></a>
+          <a href="#philosophyScene"><li>Philosophy</li></a>
+          <a href="#teamScene"><li>Team</li></a>
+          <a href="#processScene"><li>Process</li></a>
+          <a href="#portfolioScene"><li>Portfolio</li></a>
+        </ul>
+      </div>
     </div>
     <div class="scene" id="welcomeScene">
       <div class="overlay">
-        <a class="heroLink">We</a>
+        <a class="heroLink" href="#philosophyScene">We</a>
         <span class="linkExplainer">Our philosophy and team</span>
-        <a class="heroLink">Build</a>
+        <a class="heroLink" href="#processScene">Build</a>
         <span class="linkExplainer">Our process explained</span>
-        <a class="heroLink">Websites</a>
+        <a class="heroLink" href="#portfolioScene">Websites</a>
         <span class="linkExplainer">Our past work</span>
       </div>
     </div>

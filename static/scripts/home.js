@@ -3,11 +3,42 @@ otherLeft = 32;
 
 $(document).ready(function(){
   menuBar = $(".menu");
-
+  SetMenu();
   SetBasicLayoutProperties();
   SetSceneEvents();
+  SmoothScrollLinks()
   $(window).resize(function(){SetBasicLayoutProperties();});
 });
+function SmoothScrollLinks()
+{
+  $('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if(target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+      }
+  });
+}
+function SetMenu()
+{
+  $( ".cross" ).hide();
+  $( ".menu_list" ).hide();
+  $( ".hamburger" ).click(function() {
+    $( ".menu_list" ).slideToggle( "slow", function() {
+      $( ".hamburger" ).hide();
+      $( ".cross" ).show();
+    });
+  });
+
+  $( ".cross" ).click(function() {
+    $( ".menu_list" ).slideToggle( "slow", function() {
+      $( ".cross" ).hide();
+      $( ".hamburger" ).show();
+    });
+  });
+}
 
 function SetSceneEvents()
 {

@@ -30,7 +30,7 @@ class DynamicHelper:
 
         block.replaceWith(SVG_soup.find("svg"))
 
-      data = str(pageSoup.prettify())
+      data = (pageSoup.prettify()).encode('utf-8').strip()
       content_type = "text/html"
 
     return data, content_type

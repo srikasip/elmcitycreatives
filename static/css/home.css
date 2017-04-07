@@ -162,6 +162,70 @@ h1
   }
 }
 
+.hamburger{
+  background:none;
+  position:absolute;
+  color:inherit;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  color:inherit;
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu_list 
+{
+  z-index:1000000; 
+  font-weight:bold; 
+  font-size:0.8em; 
+  width:50%; 
+  background:#f1f1f1;  
+  position:fixed; 
+  text-align:center; 
+  font-size:12px;
+}
+.menu_bottom .menu_list
+{
+  bottom:5em;
+  right:0;
+}
+.menu_top .menu_list
+{
+  top:5em;
+  right:0;
+}
+.menu_list ul {
+  margin: 0; 
+  padding: 0; 
+  list-style-type: none; 
+  list-style-image: none;
+}
+.menu_list li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu_list li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu_list ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu_list ul li a:hover {  color: #666; text-decoration:none;}
+.menu_list a{text-decoration:none; color:#666;}
+.menu_list a:hover{text-decoration:none; color:#666;}
+
 /* Welcome Scene Classes */
 a.heroLink
 {
