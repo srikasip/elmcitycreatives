@@ -240,13 +240,13 @@ a.heroLink:hover + span.linkExplainer
 }
 .sceneText h1
 {
-  font-size:6vw;
+  font-size:5vw;
   text-align:left;
 }
 .sceneText h2
 {
   top:6vw;
-  font-size:5vw;
+  font-size:4vw;
   text-align:left;
   position:absolute;
   opacity:1.0;  
@@ -261,7 +261,7 @@ a.heroLink:hover + span.linkExplainer
   opacity:0.0;
 
 }
-@media (min-width:470px) and (max-width: 808px) {
+@media (min-width:470px) and (max-width: 870px) {
   .stampHolder
   {
     display:none;
