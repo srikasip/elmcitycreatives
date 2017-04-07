@@ -261,7 +261,7 @@ a.heroLink:hover + span.linkExplainer
   opacity:0.0;
 
 }
-@media only screen and (max-width: 808px) {
+@media (min-width:470px) and (max-width: 808px) {
   .stampHolder
   {
     display:none;
@@ -280,14 +280,14 @@ a.heroLink:hover + span.linkExplainer
   {
     display:block;
     clear:both;
-    font-size: 12vw;
+    font-size: 3em;
     text-align:center;
   }
   .sceneText h2
   {
     display:block;
     clear:both;
-    font-size:9vw;
+    font-size:2em;
     margin-top:1.5em;
     width:100%;
     text-align:center;
@@ -295,7 +295,7 @@ a.heroLink:hover + span.linkExplainer
   }
   .sceneText h3
   {
-    font-size:8vw;
+    font-size:1.5em;
     margin-top:2em;
     text-align:center;
     display:block;
@@ -304,8 +304,49 @@ a.heroLink:hover + span.linkExplainer
     opacity:0.0;
   }
 }
-
-
+@media only screen and (max-width: 869px) {
+  .stampHolder
+  {
+    display:none;
+    position:fixed;
+    height:0px;
+    width:0px;
+  }
+  .sceneText
+  {
+    display:none;
+    position:fixed;
+    color:#fff;
+    text-align: center;
+  }
+  .sceneText h1
+  {
+    display:block;
+    clear:both;
+    font-size: 2em;
+    text-align:center;
+  }
+  .sceneText h2
+  {
+    display:block;
+    clear:both;
+    font-size:1.5em;
+    margin-top:1.5em;
+    width:100%;
+    text-align:center;
+    opacity:1.0;
+  }
+  .sceneText h3
+  {
+    font-size:1em;
+    margin-top:3em;
+    text-align:center;
+    display:block;
+    width:100%;
+    clear:both;
+    opacity:0.0;
+  }
+}
 /* Team Scene Classes */
 .team-members
 {
