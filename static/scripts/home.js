@@ -13,11 +13,22 @@ function SmoothScrollLinks()
 {
   $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
+    var windowHeight = $(window).outerHeight();
     if(target.length) {
         event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
+        if ($(this).attr("href")=="#philosophyScene")
+        {
+          offset = target.offset().top + Math.round(windowHeight/2.0);
+          $('html, body').stop().animate({
+            scrollTop: offset
         }, 1000);
+        }
+        else
+        {
+          $('html, body').stop().animate({
+              scrollTop: target.offset().top
+          }, 1000);
+        }
       }
   });
 }
@@ -43,7 +54,6 @@ function SetMenu()
 function SetSceneEvents()
 {
   $menuBar = $(".menu");
-  
 
   //---------------------
   //Welcome Scene
@@ -123,7 +133,7 @@ function SetSceneEvents()
       
       
       philosTop = GetLinValue(0.5,bottomStart, 1,bottomEnd, currScreen, true);
-      opacity = GetLinValue(0.6,0, 1,1, currScreen, false);
+      opacity = GetLinValue(0.7,0, 1,1, currScreen, false);
       
       $(".sceneText h3:eq("+String(nowItem)+")").css("transform", "translateY("+String(philosTop)+"px)");
       $(".sceneText h3:eq("+String(nowItem)+")").css("opacity", String(opacity));
@@ -144,10 +154,10 @@ function SetSceneEvents()
       }
 
       philosTop = GetLinValue(0,bottomStart, 1,bottomEnd, flScene - nowItem, true);
-      opacity = GetLinValue(0,0, 0.8,1, flScene - nowItem, false);
+      opacity = GetLinValue(0.2,0, 0.8,1, flScene - nowItem, false);
 
       philosTop_old = GetLinValue(0,bottomEnd, 0.5,bottomStart, flScene - nowItem, true);
-      opacity_old = GetLinValue(0,1, 0.6,0, flScene - nowItem, false);
+      opacity_old = GetLinValue(0,1, 0.5,0, flScene - nowItem, false);
 
       $(".sceneText h3:eq("+String(nowItem)+")").css("transform", "translateY("+String(philosTop)+"px)");
       $(".sceneText h3:eq("+String(nowItem)+")").css("opacity", String(opacity));

@@ -22,6 +22,9 @@ a {cursor: pointer;}
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size:cover;
   padding:0;
   padding-top:3em;
@@ -45,6 +48,11 @@ h1
   clear:both;
 }
 
+@media only screen and (max-width: 1024px) {
+  .scene{
+    background-attachment: scroll;
+  }
+}
 
 /* Specific Scene Backgrounds */
 #welcomeScene{
