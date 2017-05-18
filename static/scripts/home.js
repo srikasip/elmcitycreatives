@@ -43,7 +43,7 @@ function SetMenu()
     });
   });
 
-  $( ".cross" ).click(function() {
+  $( ".cross, .menu_item" ).click(function() {
     $( ".menu_list" ).slideToggle( "slow", function() {
       $( ".cross" ).hide();
       $( ".hamburger" ).show();
